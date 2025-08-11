@@ -1,3 +1,5 @@
+"" vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin()
 
 " ステータスラインを表示
@@ -19,7 +21,7 @@ silent! colorscheme seoul256
 
 "" vim-airline
 "
-" let g:airline_theme = 'codedark'
+let g:airline_theme = 'seoul256'
 
 " ------------------
 " 表示設定
