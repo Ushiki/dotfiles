@@ -9,19 +9,29 @@ Plug 'vim-airline/vim-airline-themes'
 " colorscheme
 Plug 'tomasiser/vim-code-dark' " codedark
 Plug 'junegunn/seoul256.vim' " seoul256
+Plug 'altercation/vim-colors-solarized' " solarized
+
+
+" Python Indent
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 
 " シンタックスハイライト
 syntax on
 " カラースキーム
-" silent! colorscheme codedark
-let g:seoul256_background = 234 " 233(darkest) ~ 239(lightest)
-silent! colorscheme seoul256
+silent! colorscheme codedark
+" let g:seoul256_background = 234 " 233(darkest) ~ 239(lightest)
+" silent! colorscheme seoul256
+"let g:solarized_termcolor = 256
+"silent! colorscheme solarized
 
 "" vim-airline
-"
-let g:airline_theme = 'seoul256'
+" カラースキーム
+let g:airline_theme = 'codedark'
+
+" 閉じかっこ位置を一つ上の行の先頭に合わせる
+let g:python_pep8_indent_hang_closing = 1
 
 " ------------------
 " 表示設定
