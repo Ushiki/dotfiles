@@ -30,9 +30,6 @@ silent! colorscheme codedark
 " カラースキーム
 let g:airline_theme = 'codedark'
 
-" 閉じかっこ位置を一つ上の行の先頭に合わせる
-let g:python_pep8_indent_hang_closing = 1
-
 " ------------------
 " 表示設定
 " ------------------
