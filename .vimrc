@@ -11,6 +11,7 @@ Plug 'tomasiser/vim-code-dark' " codedark
 Plug 'junegunn/seoul256.vim' " seoul256
 Plug 'altercation/vim-colors-solarized' " solarized
 
+Plug 'Yggdroot/indentLine'
 
 " Python Indent
 Plug 'Vimjas/vim-python-pep8-indent'
@@ -25,6 +26,9 @@ silent! colorscheme codedark
 " silent! colorscheme seoul256
 "let g:solarized_termcolor = 256
 "silent! colorscheme solarized
+
+"" indentLine
+let g:indentLine_char = '│'
 
 "" vim-airline
 " カラースキーム
