@@ -105,4 +105,18 @@ set matchpairs+=<:>
 " 矩形選択時に行末に文字がなくてもカーソル移動できるようにする
 set virtualedit+=block
 
-
+" ------------------
+" netrw ファイラ
+" ------------------
+" プラグインを有効化
+filetype plugin on
+" 表示形式 1: filename, size, last modified
+let g:netrw_liststyle=1
+" ヘッダを非表示にする
+" let g:netrw_banner=0
+" ファイルサイズを(k, m, g)で表示
+let g:netrw_sizestyle="H"
+" 日付の表示フォーマット yyyy/mm/dd(曜日) H:M:Sで表示
+let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
+" プレビュー(p)表示を垂直分割で表示
+let g:netrw_preview=1
