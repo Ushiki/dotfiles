@@ -78,6 +78,8 @@ set statusline+=[LOW=%l/%L]
 " ------------------
 " 検索結果をハイライト表示
 set hlsearch
+" インクリメント検索 文字を入力するごとにマッチする
+set incsearch
 " 大文字小文字の区別をしない
 set ignorecase
 " 大文字と小文字がどちらも含まれている場合は区別する
