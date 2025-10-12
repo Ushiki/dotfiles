@@ -16,6 +16,10 @@ Plug 'Yggdroot/indentLine'
 " Python Indent
 Plug 'Vimjas/vim-python-pep8-indent'
 
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " シンタックスハイライト
