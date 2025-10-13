@@ -16,6 +16,9 @@ Plug 'Yggdroot/indentLine'
 " Python Indent
 Plug 'Vimjas/vim-python-pep8-indent'
 
+" Insert or delete brackets, parens, quotes in pair
+Plug 'jiangmiao/auto-pairs'
+
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
