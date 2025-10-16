@@ -48,8 +48,6 @@ let g:airline_theme = 'codedark'
 set number
 " ターミナルのタイトルを編集ファイルに設定
 set title
-" マウス有効化
-set mouse=a
 " 不可視文字の表示
 set list
 " 不可視文字
@@ -115,6 +113,10 @@ set matchpairs+=<:>
 set virtualedit+=block
 " 未保存の状態で別のバッファを開けるようにする
 set hidden
+" マウス有効化
+set mouse=a
+" tmuxのなかでマウスを使えるようにする
+set ttymouse=xterm2
 
 " ------------------
 " netrw ファイラ
