@@ -113,6 +113,8 @@ set showmatch
 set matchpairs+=<:>
 " 矩形選択時に行末に文字がなくてもカーソル移動できるようにする
 set virtualedit+=block
+" 未保存の状態で別のバッファを開けるようにする
+set hidden
 
 " ------------------
 " netrw ファイラ
@@ -120,7 +122,7 @@ set virtualedit+=block
 " プラグインを有効化
 filetype plugin on
 " 表示形式 1: filename, size, last modified
-let g:netrw_liststyle=1
+let g:netrw_liststyle=3
 " ヘッダを非表示にする
 " let g:netrw_banner=0
 " ファイルサイズを(k, m, g)で表示
