@@ -29,12 +29,17 @@ call plug#end()
 syntax on
 " カラースキーム
 silent! colorscheme codedark
+
+" seoul256
 " let g:seoul256_background = 234 " 233(darkest) ~ 239(lightest)
 " silent! colorscheme seoul256
-"let g:solarized_termcolor = 256
+
+" solarized
+" let g:solarized_termcolor = 256
 "silent! colorscheme solarized
 
-"" indentLine
+
+" indentLine
 let g:indentLine_char = '│'
 
 "" vim-airline
