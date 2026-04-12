@@ -43,7 +43,7 @@ fi
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 [ ! -d "$HOME/dotfiles" ] && git clone https://github.com/Ushiki/dotfiles.git ~/dotfiles
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.tmux.confg ~/.tmux.conf
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 
 # --- 6. .bashrc 設定 ---
