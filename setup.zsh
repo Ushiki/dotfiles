@@ -17,7 +17,7 @@ if [ ! -d "$HOME/dotfiles" ]; then
 fi
 
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.tmux.confg ~/.tmux.conf
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 
 # --- 3. .zshrc 設定 (既に存在する行は追記しない) ---
