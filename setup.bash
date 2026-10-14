@@ -46,12 +46,13 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 
-# --- 6. .bashrc 設定 ---
-{
-    echo 'set -o vi'
-    echo 'export PATH="$HOME/.bat:$PATH"'
-    echo "source $HOME/.bat/autocomplete/bat.bash"
-} >> ~/.bashrc
+# --- 6. .bashrc 設定 (既に存在する行は追記しない) ---
+add_to_bashrc() {
+    grep -qxF -- "$1" ~/.bashrc 2>/dev/null || echo "$1" >> ~/.bashrc
+}
+add_to_bashrc 'set -o vi'
+add_to_bashrc 'export PATH="$HOME/.bat:$PATH"'
+add_to_bashrc "source $HOME/.bat/autocomplete/bat.bash"
 
 echo "Ubuntu setup complete! Run 'source ~/.bashrc'"
 
